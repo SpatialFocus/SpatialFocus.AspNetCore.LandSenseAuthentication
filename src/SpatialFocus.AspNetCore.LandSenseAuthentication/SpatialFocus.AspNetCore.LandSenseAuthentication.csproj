@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<Version>1.0.0-alpha2</Version>
+		<Version>1.0.0</Version>
 		<PackageId>SpatialFocus.AspNetCore.LandSenseAuthentication</PackageId>
-		<Title>Spatial Focus ASP.NET Core LandSense Authentication</Title>
-		<Description>LandSense auth for ASP.NET projects.</Description>
+		<Title>Spatial Focus ASP.NET Core LandSense Authentication Handler</Title>
+		<Description>LandSense auth handler for ASP.NET Core projects.</Description>
 		<PackageTags>AspNetCore,Authentication,LandSense,OAuth,Federation</PackageTags>
 		<PackageProjectUrl>https://github.com/SpatialFocus/SpatialFocus.AspNetCore.LandSenseAuthentication</PackageProjectUrl>
 		<PackageLicenseUrl>https://github.com/SpatialFocus/SpatialFocus.AspNetCore.LandSenseAuthentication/blob/master/LICENSE</PackageLicenseUrl>
