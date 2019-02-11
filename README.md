@@ -57,7 +57,13 @@ public class Startup
 
 ## Example usage
 
-For an exemplary usage for a "secret" endpoint that prints the claims for the user account referenced with the Bearer access-token, see the `SampleController` in the [sample project](https://github.com/SpatialFocus/SpatialFocus.AspNetCore.LandSenseAuthentication/tree/master/sample/SpatialFocus.AspNetCore.LandSenseAuthentication.ApiSample).
+The client needs to send a valid LandSense access token in order to request protected endpoints. To access such an endpoint, the request has to contain a Bearer token sent in the Authorization header:
+
+```
+Authorization: Bearer abcdef1234567890abcdef123456789abcdef123
+```
+
+For an exemplary usage in the ASP.NET Core application have a look at the `Secret` endpoint that prints the claims for the user account referenced with the Bearer access-token. Check out the `SampleController` in the [sample project](https://github.com/SpatialFocus/SpatialFocus.AspNetCore.LandSenseAuthentication/tree/master/sample/SpatialFocus.AspNetCore.LandSenseAuthentication.ApiSample).
 
 ```csharp
 [Authorize]
