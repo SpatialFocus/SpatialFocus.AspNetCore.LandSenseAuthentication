@@ -14,7 +14,7 @@ Install-Package SpatialFocus.AspNetCore.LandSenseAuthentication
 
 This extension a simple method for an API, that restricts certain endpoints to users with a valid [LandSense](https://landsense.eu) access token. To set up the application you first need to register your service in the [LandSense Authorization Server](https://as.landsense.eu). Provide the client-id and client-secret in the appsettings.json file like in the following code sample.
 
-```json
+```js
 "LandSenseCredentials": {
    "ClientId": "12345678-abcd-1234-12ab-123456789abc@as.landsense.eu",
    "ClientSecret": "1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef"
@@ -57,7 +57,7 @@ public class Startup
 
 ## Example usage
 
-For an exemplary usage for a "secret" endpoint that prints the claims for the user account referenced with the Bearer access-token, see the `SampleController` in the [sample project](https://github.com/SpatialFocus/SpatialFocus.AspNetCore.LandSenseAuthentication/master/sample/SpatialFocus.AspNetCore.LandSenseAuthentication.ApiSample).
+For an exemplary usage for a "secret" endpoint that prints the claims for the user account referenced with the Bearer access-token, see the `SampleController` in the [sample project](https://github.com/SpatialFocus/SpatialFocus.AspNetCore.LandSenseAuthentication/tree/master/sample/SpatialFocus.AspNetCore.LandSenseAuthentication.ApiSample).
 
 ```csharp
 [Authorize]
